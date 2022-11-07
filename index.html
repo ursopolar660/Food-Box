@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="script" href="JS/script.js">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Tchello's Pizzaria</title>
+</head>
+<body>
+    <div class="topo">
+        <h1>Tchello's Pizzaria</h1>
+        <h2>A melhor pizzaria da região!</h2>
+    </div>
+    <h3>Pizzas</h3>
+    <!--Pizza Pepperoni-->
+    <div class="produto" onclick="pepperoni()" id="pepperoni">
+        <img src="https://www.receiteria.com.br/wp-content/uploads/receitas-de-pizza-de-pepperoni-0.jpg" alt="Pizza Pepperoni">
+        <h4>Pepperoni</h4>
+        <p>Ingredientes:<br>Molho de Tomate, Muçarela, Pepperoni e Oregano.</p>
+        <p><strong>R$ 25,90</strong></p>
+    </div>
+    <!--Pizza 4 Queijos-->
+    <div class="produto" onclick="queijos()" id="queijos">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Y3c_lsjSPHylPZF-faR3PYa9u5cv_3ZRqg&usqp=CAU" alt="Pizza Quatro Queijos">
+        <h4>Quatro Queijos</h4>
+        <p>Ingredientes:<br>Molho de Tomate, Muçarela, Parmesão, Provolone, Catupiry e Oregano.</p>
+        <p><strong>R$ 35,90</strong></p>
+    </div>
+    <!--Pizza Portuguesa-->
+    <div class="produto" onclick="portuguesa()" id="portuguesa">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/11/2a/58/1a/pizza-portuguesa-classica.jpg" alt="Pizza Portuguesa">
+        <h4>Portuguesa</h4>
+        <p>Ingredientes:<br>Molho de Tomate, Muçarela, Presunto, Ovo, Pimentão, Tomate, Milho, Azeitona e Oregano.</p>
+        <p><strong>R$ 39,90</strong></p>
+    </div>
+    <!--Refrigerantes-->
+    <h3>Bebidas</h3>
+    <!--Coca 2 litros-->
+    <div class="bebida" onclick="coca()" id="coca">
+        <img src="https://cf.shopee.com.br/file/b2e2b86c42abc1708e0e29445e51f11d" alt="Coca Cola 2 Litros">
+        <h4>Coca-Cola 2 litros</h4>
+        <p><strong>R$ 13,00</strong></p>
+    </div>
+    <!--Fanta 2 Litros-->
+    <div class="bebida" onclick="fanta()" id="fanta">
+        <img src="https://www.distribuidoracaue.com.br/media/catalog/product/cache/1/thumbnail/600x800/9df78eab33525d08d6e5fb8d27136e95/r/e/refrigerante-fanta-laranja-2-litros.jpg" alt="Fanta Laranja 2 litros">
+        <h4>Fanta Laranja 2 litros</h4>
+        <p><strong>R$ 11,90</strong></p>
+    </div>
+    <!--Guaraná 2 litros-->
+    <div class="bebida" onclick="guarana()" id="guarana">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6RIXcIc3S1_TK4YHm0ip3gSWNdJjrzHQgLV5qOCBjPtK-pzyYHOltjJcccrdVsleY5dY&usqp=CAU" alt="Guaraná Antártica 2 litros">
+        <h4>Guaraná Antártica 2 litros</h4>
+        <p><strong>R$ 10,90</strong></p>
+    </div>
+    <script>
+        let prato;
+        let bebida;
+
+        function pepperoni() {
+            document.getElementById("pepperoni").style.borderColor = "green";
+            document.getElementById("queijos").style.borderColor = "white";
+            document.getElementById("portuguesa").style.borderColor = "white";
+
+            prato = "pepperoni";
+        }
+        function queijos() {
+            document.getElementById("queijos").style.borderColor = "green";
+            document.getElementById("pepperoni").style.borderColor = "white";
+            document.getElementById("portuguesa").style.borderColor = "white";
+
+            prato = "queijos";
+        }
+        function portuguesa() {
+            document.getElementById("portuguesa").style.borderColor = "green";
+            document.getElementById("pepperoni").style.borderColor = "white";
+            document.getElementById("queijos").style.borderColor = "white";
+
+            prato = "portuguesa";
+        }
+        function fanta() {
+            document.getElementById("fanta").style.borderColor = "green";
+            document.getElementById("coca").style.borderColor = "white";
+            document.getElementById("guarana").style.borderColor = "white";
+
+            bebida = "fanta";
+        }
+        function coca() {
+            document.getElementById("coca").style.borderColor = "green";
+            document.getElementById("fanta").style.borderColor = "white";
+            document.getElementById("guarana").style.borderColor = "white";
+
+            bebida = "coca";
+        }
+        function guarana() {
+            document.getElementById("guarana").style.borderColor = "green";
+            document.getElementById("fanta").style.borderColor = "white";
+            document.getElementById("coca").style.borderColor = "white";
+
+            bebida = "guarana";
+        }
+
+    </script>
+</body>
+</html>

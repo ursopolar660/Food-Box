@@ -1,0 +1,83 @@
+background {
+  background: lightgray;
+}
+.topo {
+  background: red;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 #bbbbbb;
+}
+.produto {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 #bbbbbb;
+  cursor: pointer;
+  border: 5px solid white;
+}
+h1 {
+  margin: 0px;
+  font-family: "Righteous";
+  font-weight: normal;
+}
+h2 {
+  margin: 0px;
+  font-size: 18px;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+img {
+  width: 130px;
+  border-radius: 5px;
+  float: right;
+}
+.bebida {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 #bbbbbb;
+  cursor: pointer;
+  border: 5px solid white;
+}
+.bebida img {
+  width: 60px;
+  border-radius: 5px;
+  float: right;
+}
+/* .sobremesa {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 #bbbbbb;
+  cursor: pointer;
+  border: 5px solid white;
+}
+.sobremesa img {
+  width: 120px;
+  border-radius: 5px;
+  float: right;
+} */
+.endereco {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px 0 #bbbbbb;
+  border: 5px solid white;
+}
+.endereco input {
+  float: center;
+  width: 40vw;
+}
