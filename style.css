@@ -1,0 +1,114 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+background {
+    background: lightgray;
+  }
+  .topo {
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #bbbbbb;
+  }
+  .produto {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 0 #bbbbbb;
+    cursor: pointer;
+    border: 5px solid white;
+  }
+  h1 {
+    margin: 0px;
+    font-family: "Righteous";
+    font-weight: normal;
+  }
+  h2 {
+    margin: 0px;
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  img {
+    width: 130px;
+    border-radius: 5px;
+    float: right;
+  }
+  .bebida, .sobremesa {
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px 0 #bbbbbb;
+    cursor: pointer;
+    border: 5px solid white;
+  }
+  .bebida img, .sobremsa img{
+    width: 60px;
+    border-radius: 5px;
+    float: right;
+  }
+  #guarana img, #fanta img{
+    width: 2.6em;
+    padding-right: 11px;
+
+  }
+  #prestigio img{
+    width: 8em;
+    /* margin-top: 4.6em; */
+    /* padding: 1.2em; */
+  
+  }
+  
+#kitkat img{
+    padding-left: -11px;
+    width: 6em;
+}
+
+.fimPedido{
+    display: flex;
+    flex-direction: column;
+}
+.endereco{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    & p{
+        padding: 0.2em;
+        font-weight: 600;
+    }
+    & input{
+        width: 80%;
+        text-align: center;
+        height: 2em;
+
+    }
+}
+.troco{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    gap: 5;
+    & p {
+        padding: 0.2em;
+        font-weight: 600;
+    }
+    & .valorPedido{
+        padding-left: 5em;
+    }
+    & input{
+        width: 20%;
+        text-align: center;
+        height: 2em;
+    }
+}
